@@ -8,24 +8,24 @@ import {
 
 export default function HomePage() {
   return (
-    <main className="bg-slate-50">
+    <main className="bg-[#F8FAFC]">
 
       {/* Hero */}
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-blue-50 to-slate-50" />
+        <div className="absolute inset-0 bg-[#F8FAFC]" />
 
         <div className="relative max-w-7xl mx-auto px-6 py-32">
 
           <div className="text-center max-w-4xl mx-auto">
 
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100 text-blue-700 text-sm font-medium mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#60A5FA] text-[#1E293B] text-sm font-medium mb-6">
               <MapPin size={16} />
               Find hostels & PGs near your campus
             </div>
 
             <h1 className="text-6xl md:text-7xl font-bold tracking-tight text-slate-900">
               Find Your Perfect
-              <span className="text-blue-600"> Stay </span>
+              <span className="text-blue-600"> Stay!! </span>
               Near Campus
             </h1>
 
@@ -38,14 +38,14 @@ export default function HomePage() {
 
               <Link
                 href="/properties"
-                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-medium transition"
+                className=" bg-[#2563EB] hover:bg-[#60A5FA] text-[white] px-8 py-4 rounded-xl font-medium transition"
               >
                 Explore Properties
               </Link>
 
               <Link
                 href="/map"
-                className="border border-slate-300 hover:bg-white px-8 py-4 rounded-xl font-medium transition text-blue-600"
+                className="bg-[#2563EB] hover:bg-[#60A5FA] border border-slate-300 px-8 py-4 rounded-xl font-medium transition text-[white]"
               >
                 View Map
               </Link>
@@ -95,7 +95,7 @@ export default function HomePage() {
       <section className="max-w-6xl mx-auto px-6 py-20">
 
         <div className="text-center mb-14">
-          <h2 className="text-4xl font-bold">
+          <h2 className="text-4xl font-bold text-[#1E293B]">
             Why Choose CampusNest?
           </h2>
 
@@ -107,28 +107,32 @@ export default function HomePage() {
         <div className="grid md:grid-cols-3 gap-8">
 
           <div className="bg-white rounded-2xl shadow-sm p-8 hover:shadow-lg transition">
-            <Search className="text-blue-600 mb-5" size={32} />
+  
+            <div className="flex items-center gap-3 mb-4">
+              <Search className="text-blue-600" size={28} />
 
-            <h3 className="text-xl font-semibold mb-3">
+              <h3 className="text-[#1E293B] text-xl font-semibold">
               Smart Search
-            </h3>
+              </h3>
+            </div>
 
             <p className="text-slate-500">
-              Filter properties by rent, amenities,
-              and location in seconds.
+            Filter properties by rent, amenities, and location in seconds.
             </p>
+
           </div>
 
           <div className="bg-white rounded-2xl shadow-sm p-8 hover:shadow-lg transition">
+            <div className="flex items-center gap-3 mb-4">
             <ShieldCheck
-              className="text-green-600 mb-5"
-              size={32}
+              className="text-green-600"
+              size={28}
             />
 
-            <h3 className="text-xl font-semibold mb-3">
+            <h3 className="text-[#1E293B] font-semibold text-xl">
               Verified Listings
             </h3>
-
+            </div>
             <p className="text-slate-500">
               Browse reliable listings from genuine
               property owners.
@@ -136,15 +140,16 @@ export default function HomePage() {
           </div>
 
           <div className="bg-white rounded-2xl shadow-sm p-8 hover:shadow-lg transition">
+            <div className="flex items-center gap-3 mb-4">
             <Building2
-              className="text-purple-600 mb-5"
-              size={32}
+              className="text-purple-600"
+              size={28}
             />
 
-            <h3 className="text-xl font-semibold mb-3">
+            <h3 className="text-[#1E293B] font-semibold text-xl">
               Student Friendly
             </h3>
-
+            </div>
             <p className="text-slate-500">
               Built specifically for students looking
               for hostels and PGs.
