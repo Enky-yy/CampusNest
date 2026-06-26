@@ -15,7 +15,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="border-b">
+    <nav className="sticky top-0 z-50 border-b bg-white shadow-sm">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between">
         <Link href="/" className="font-bold text-xl">
           CampusNest
